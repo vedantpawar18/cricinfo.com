@@ -56,7 +56,7 @@ import { Table,
          <Td fontSize="12px" p ="8px 12px" fontWeight="medium" cursor="pointer" textDecoration="underline" _hover={{
      color: "blue.500"
    }}>{item.batsman}</Td>
-         <Td fontSize="12px"   p ="8px 12px">{item.wiketby == "not out" ? null: <ChevronDownIcon color="blue.600"/>}{item.wiketby}</Td>
+         <Td fontSize="12px"   p ="8px 12px">{item.wiketby === "not out" ? null: <ChevronDownIcon color="blue.600"/>}{item.wiketby}</Td>
          <Td fontSize="12px" color="black" textAlign="end" fontWeight="bold" p ="8px 12px">{item.r}</Td>
          <Td fontSize="12px" textAlign="center" p ="8px 12px">{item.b}</Td>
          <Td fontSize="12px" textAlign="center" p ="8px 12px">{item.four}</Td>
@@ -138,7 +138,7 @@ import { Table,
          <Td p ="8px 12px"isNumeric>{item.b}</Td>
          <Td p ="8px 12px"isNumeric>{item.zero}</Td>
          <Td p ="8px 12px"isNumeric>{item.r}</Td>
-         <Td p ="8px 12px"  fontWeight="bold" textAlign="end" isNumeric>{item.w}{item.w == 0 ? null: <ChevronDownIcon color="blue.600"/>}</Td>
+         <Td p ="8px 12px"  fontWeight="bold" textAlign="end" isNumeric>{item.w}{item.w === 0 ? null: <ChevronDownIcon color="blue.600"/>}</Td>
          <Td p ="8px 12px"isNumeric>{item.rpb}</Td>
          <Td p ="8px 12px"isNumeric>{item.four}</Td>
          <Td p ="8px 12px"isNumeric>{item.six}</Td>

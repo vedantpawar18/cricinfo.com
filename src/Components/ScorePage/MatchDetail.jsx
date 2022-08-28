@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { mvpData } from '../../Redux/filter/action';
 import { AccordianTask } from './AccordianTask';
 import { AskCrickinfo } from './AskCrickinfo';
-import { MatchNotes } from './MatchNotes';
+//import { MatchNotes } from './MatchNotes';
 import { ScoreMatchDetails } from './ScoreMatchDetails';
 
 const MatchDetail = () => {
