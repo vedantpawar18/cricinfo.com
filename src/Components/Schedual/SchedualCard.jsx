@@ -3,8 +3,8 @@ import React from 'react'
 
 export const SchedualCard = ({item}) => {
   return (
-    <Box fontFamily="BentonSans-Bold,Arial,Noto Sans,sans-serif" mt = "10px" w = "100%" mb="20px" cursor="pointer">
-        <Box  w="290px" h="146px" m ="auto" p="8px" borderRadius="10px" backgroundColor="white" color="black">
+    <Box fontFamily="BentonSans-Bold,Arial,Noto Sans,sans-serif" mt = "10px" mb="20px" cursor="pointer">
+        <Box  w="290px" h="146px" p="8px" borderRadius="10px" backgroundColor="white" color="black">
             <Box>
                 <Text textAlign="left" fontSize="10px"><span style = {{ color:"black",fontWeight:"bold" }}>{item.status}</span> <span style = {{ color:"#48494A",fontWeight:"medium" }}> •  {item.legue}</span>   <span style = {{ color:"#48494A"}}> •  {item.place}</span></Text>
             </Box>

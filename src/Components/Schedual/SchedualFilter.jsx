@@ -34,7 +34,7 @@ console.log(match)
   },[])
   return (
     <Box backgroundColor="rgb(3,152,220)" color="white">
-    <HStack  w="85%" m="auto">
+    <HStack  w="90%" m="auto">
       <Button
       size = "sm"
       backgroundColor="transparent"

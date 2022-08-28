@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { mvpData } from '../../Redux/filter/action';
 import { AccordianTask } from './AccordianTask';
 import { AskCrickinfo } from './AskCrickinfo';
-//import { MatchNotes } from './MatchNotes';
+import { MatchNotes } from './MatchNotes';
 import { ScoreMatchDetails } from './ScoreMatchDetails';
 
 const MatchDetail = () => {
@@ -16,7 +16,7 @@ useEffect(() =>{
 },[]);
   return (
     <div>
-        <Box boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" w="904px">
+        <Box boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" w="904px" ml="4%" mt = "16px">
             <Box display="flex" justifyContent="space-between" p="12px 16px" b>
                 <Box fontSize="14">
                     <Heading fontSize="14px" textAlign="left">{match.results}</Heading>
@@ -73,7 +73,9 @@ useEffect(() =>{
                     </Box>
                     <Box >
                     <Avatar size='lg' src={match.pimg} alt="pov"/>
-                    <Box  bg="white" borderRadius="50%" w="20px" position="absolute" top="115px">
+
+                    {/* icon part badge */}
+                    <Box  bg="white" borderRadius="50%" w="20px" position="absolute" top="380px">
                     <Image borderRadius="50%" src={match.vimg} bg="white"boxSize='1.25em' />
                     </Box>
                     </Box>
@@ -98,10 +100,12 @@ useEffect(() =>{
       <p>one!</p>
     </TabPanel>
     <TabPanel>
+
+    {/* ScoreCard */}
     <AccordianTask/>
     <AskCrickinfo/>
     <ScoreMatchDetails/>
-    {/* <MatchNotes/> */}
+    <MatchNotes/>
     </TabPanel>
     <TabPanel>
       <p>three!</p>
